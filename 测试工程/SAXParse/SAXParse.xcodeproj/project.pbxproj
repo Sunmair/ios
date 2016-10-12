@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07AD5D0E1DAE215200349233 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AD5D0D1DAE215200349233 /* main.m */; };
+		07AD5D111DAE215200349233 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AD5D101DAE215200349233 /* AppDelegate.m */; };
+		07AD5D141DAE215200349233 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AD5D131DAE215200349233 /* ViewController.m */; };
+		07AD5D171DAE215200349233 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AD5D151DAE215200349233 /* Main.storyboard */; };
+		07AD5D191DAE215200349233 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AD5D181DAE215200349233 /* Assets.xcassets */; };
+		07AD5D1C1DAE215200349233 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AD5D1A1DAE215200349233 /* LaunchScreen.storyboard */; };
+		07AD5D271DAE215200349233 /* SAXParseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AD5D261DAE215200349233 /* SAXParseTests.m */; };
+		07AD5D321DAE215200349233 /* SAXParseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AD5D311DAE215200349233 /* SAXParseUITests.m */; };
+		07AD5D401DAE217900349233 /* Students.xml in Resources */ = {isa = PBXBuildFile; fileRef = 07AD5D3F1DAE217900349233 /* Students.xml */; };
+		07AD5D431DAE219500349233 /* XMLParseManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AD5D421DAE219500349233 /* XMLParseManger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AD5D231DAE215200349233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AD5D011DAE215200349233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AD5D081DAE215200349233;
+			remoteInfo = SAXParse;
+		};
+		07AD5D2E1DAE215200349233 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AD5D011DAE215200349233 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AD5D081DAE215200349233;
+			remoteInfo = SAXParse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07AD5D091DAE215200349233 /* SAXParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAXParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AD5D0D1DAE215200349233 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07AD5D0F1DAE215200349233 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		07AD5D101DAE215200349233 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07AD5D121DAE215200349233 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		07AD5D131DAE215200349233 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		07AD5D161DAE215200349233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07AD5D181DAE215200349233 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07AD5D1B1DAE215200349233 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07AD5D1D1DAE215200349233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AD5D221DAE215200349233 /* SAXParseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAXParseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AD5D261DAE215200349233 /* SAXParseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAXParseTests.m; sourceTree = "<group>"; };
+		07AD5D281DAE215200349233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AD5D2D1DAE215200349233 /* SAXParseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SAXParseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AD5D311DAE215200349233 /* SAXParseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SAXParseUITests.m; sourceTree = "<group>"; };
+		07AD5D331DAE215200349233 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07AD5D3F1DAE217900349233 /* Students.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = Students.xml; path = ../Students.xml; sourceTree = "<group>"; };
+		07AD5D411DAE219500349233 /* XMLParseManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParseManger.h; sourceTree = "<group>"; };
+		07AD5D421DAE219500349233 /* XMLParseManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParseManger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AD5D061DAE215200349233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AD5D1F1DAE215200349233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AD5D2A1DAE215200349233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AD5D001DAE215200349233 = {
+			isa = PBXGroup;
+			children = (
+				07AD5D0B1DAE215200349233 /* SAXParse */,
+				07AD5D251DAE215200349233 /* SAXParseTests */,
+				07AD5D301DAE215200349233 /* SAXParseUITests */,
+				07AD5D0A1DAE215200349233 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07AD5D0A1DAE215200349233 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AD5D091DAE215200349233 /* SAXParse.app */,
+				07AD5D221DAE215200349233 /* SAXParseTests.xctest */,
+				07AD5D2D1DAE215200349233 /* SAXParseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AD5D0B1DAE215200349233 /* SAXParse */ = {
+			isa = PBXGroup;
+			children = (
+				07AD5D0F1DAE215200349233 /* AppDelegate.h */,
+				07AD5D101DAE215200349233 /* AppDelegate.m */,
+				07AD5D121DAE215200349233 /* ViewController.h */,
+				07AD5D131DAE215200349233 /* ViewController.m */,
+				07AD5D3F1DAE217900349233 /* Students.xml */,
+				07AD5D411DAE219500349233 /* XMLParseManger.h */,
+				07AD5D421DAE219500349233 /* XMLParseManger.m */,
+				07AD5D151DAE215200349233 /* Main.storyboard */,
+				07AD5D181DAE215200349233 /* Assets.xcassets */,
+				07AD5D1A1DAE215200349233 /* LaunchScreen.storyboard */,
+				07AD5D1D1DAE215200349233 /* Info.plist */,
+				07AD5D0C1DAE215200349233 /* Supporting Files */,
+			);
+			path = SAXParse;
+			sourceTree = "<group>";
+		};
+		07AD5D0C1DAE215200349233 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AD5D0D1DAE215200349233 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AD5D251DAE215200349233 /* SAXParseTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AD5D261DAE215200349233 /* SAXParseTests.m */,
+				07AD5D281DAE215200349233 /* Info.plist */,
+			);
+			path = SAXParseTests;
+			sourceTree = "<group>";
+		};
+		07AD5D301DAE215200349233 /* SAXParseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07AD5D311DAE215200349233 /* SAXParseUITests.m */,
+				07AD5D331DAE215200349233 /* Info.plist */,
+			);
+			path = SAXParseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AD5D081DAE215200349233 /* SAXParse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AD5D361DAE215200349233 /* Build configuration list for PBXNativeTarget "SAXParse" */;
+			buildPhases = (
+				07AD5D051DAE215200349233 /* Sources */,
+				07AD5D061DAE215200349233 /* Frameworks */,
+				07AD5D071DAE215200349233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAXParse;
+			productName = SAXParse;
+			productReference = 07AD5D091DAE215200349233 /* SAXParse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07AD5D211DAE215200349233 /* SAXParseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AD5D391DAE215200349233 /* Build configuration list for PBXNativeTarget "SAXParseTests" */;
+			buildPhases = (
+				07AD5D1E1DAE215200349233 /* Sources */,
+				07AD5D1F1DAE215200349233 /* Frameworks */,
+				07AD5D201DAE215200349233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AD5D241DAE215200349233 /* PBXTargetDependency */,
+			);
+			name = SAXParseTests;
+			productName = SAXParseTests;
+			productReference = 07AD5D221DAE215200349233 /* SAXParseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07AD5D2C1DAE215200349233 /* SAXParseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AD5D3C1DAE215200349233 /* Build configuration list for PBXNativeTarget "SAXParseUITests" */;
+			buildPhases = (
+				07AD5D291DAE215200349233 /* Sources */,
+				07AD5D2A1DAE215200349233 /* Frameworks */,
+				07AD5D2B1DAE215200349233 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AD5D2F1DAE215200349233 /* PBXTargetDependency */,
+			);
+			name = SAXParseUITests;
+			productName = SAXParseUITests;
+			productReference = 07AD5D2D1DAE215200349233 /* SAXParseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AD5D011DAE215200349233 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Eric;
+				TargetAttributes = {
+					07AD5D081DAE215200349233 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2KFJXM8THX;
+					};
+					07AD5D211DAE215200349233 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2KFJXM8THX;
+						TestTargetID = 07AD5D081DAE215200349233;
+					};
+					07AD5D2C1DAE215200349233 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2KFJXM8THX;
+						TestTargetID = 07AD5D081DAE215200349233;
+					};
+				};
+			};
+			buildConfigurationList = 07AD5D041DAE215200349233 /* Build configuration list for PBXProject "SAXParse" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07AD5D001DAE215200349233;
+			productRefGroup = 07AD5D0A1DAE215200349233 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AD5D081DAE215200349233 /* SAXParse */,
+				07AD5D211DAE215200349233 /* SAXParseTests */,
+				07AD5D2C1DAE215200349233 /* SAXParseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AD5D071DAE215200349233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD5D1C1DAE215200349233 /* LaunchScreen.storyboard in Resources */,
+				07AD5D401DAE217900349233 /* Students.xml in Resources */,
+				07AD5D191DAE215200349233 /* Assets.xcassets in Resources */,
+				07AD5D171DAE215200349233 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AD5D201DAE215200349233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AD5D2B1DAE215200349233 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AD5D051DAE215200349233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD5D141DAE215200349233 /* ViewController.m in Sources */,
+				07AD5D431DAE219500349233 /* XMLParseManger.m in Sources */,
+				07AD5D111DAE215200349233 /* AppDelegate.m in Sources */,
+				07AD5D0E1DAE215200349233 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AD5D1E1DAE215200349233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD5D271DAE215200349233 /* SAXParseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AD5D291DAE215200349233 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AD5D321DAE215200349233 /* SAXParseUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AD5D241DAE215200349233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AD5D081DAE215200349233 /* SAXParse */;
+			targetProxy = 07AD5D231DAE215200349233 /* PBXContainerItemProxy */;
+		};
+		07AD5D2F1DAE215200349233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AD5D081DAE215200349233 /* SAXParse */;
+			targetProxy = 07AD5D2E1DAE215200349233 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07AD5D151DAE215200349233 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AD5D161DAE215200349233 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07AD5D1A1DAE215200349233 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AD5D1B1DAE215200349233 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AD5D341DAE215200349233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07AD5D351DAE215200349233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AD5D371DAE215200349233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SAXParse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.www.SAXParse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07AD5D381DAE215200349233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SAXParse/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.www.SAXParse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07AD5D3A1DAE215200349233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SAXParseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.www.SAXParseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAXParse.app/SAXParse";
+			};
+			name = Debug;
+		};
+		07AD5D3B1DAE215200349233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SAXParseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.www.SAXParseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SAXParse.app/SAXParse";
+			};
+			name = Release;
+		};
+		07AD5D3D1DAE215200349233 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SAXParseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.www.SAXParseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SAXParse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		07AD5D3E1DAE215200349233 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SAXParseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric.www.SAXParseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SAXParse;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AD5D041DAE215200349233 /* Build configuration list for PBXProject "SAXParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AD5D341DAE215200349233 /* Debug */,
+				07AD5D351DAE215200349233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AD5D361DAE215200349233 /* Build configuration list for PBXNativeTarget "SAXParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AD5D371DAE215200349233 /* Debug */,
+				07AD5D381DAE215200349233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07AD5D391DAE215200349233 /* Build configuration list for PBXNativeTarget "SAXParseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AD5D3A1DAE215200349233 /* Debug */,
+				07AD5D3B1DAE215200349233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07AD5D3C1DAE215200349233 /* Build configuration list for PBXNativeTarget "SAXParseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AD5D3D1DAE215200349233 /* Debug */,
+				07AD5D3E1DAE215200349233 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AD5D011DAE215200349233 /* Project object */;
+}

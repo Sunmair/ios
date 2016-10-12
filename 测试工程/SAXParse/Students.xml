@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding = "UTF-8"?>
+<Students>
+         <Student position = "ios初级">
+               <name>凯哥</name>
+               <age>20</age>
+               <gender>man</gender>
+            </Student>
+         <Student position = "ios高富帅">
+             <name>帅斌</name>
+             <age>21</age>
+             <gender>man</gender>
+         </Student>
+         <Student position = "ios白富美">
+             <name>晓东</name>
+             <age>22</age>
+             <gender>man</gender>
+        </Student>
+         <Student position = "ios闷骚男">
+             <name>王岩</name>
+             <age>20</age>
+             <gender>man</gender>
+        </Student>
+</Students>
