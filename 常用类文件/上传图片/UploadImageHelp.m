@@ -121,7 +121,7 @@
     NSString *sid = [[UserInfoManager shareUserInfoManager] getValueWithKey:@"sid"];
     [manager POST:uploadImageUrl parameters:@{@"sid":sid,@"folder":@"xingShiZheng"} constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         //        [formData appendPartWithFileURL:filePath name:@"xingShiZheng" fileName:@"text.jpeg" mimeType:@"image/jpg" error:nil];
-        [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 1.0) name:@"xingShiZheng" fileName:title mimeType:@"image/jpg"];
+        [formData appendPartWithFileData:UIImageJPEGRepresentation(image, 1.0) name:self.filePath fileName:title mimeType:@"image/jpg"];
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         CGFloat prog = 1.0 * uploadProgress.completedUnitCount/uploadProgress.totalUnitCount;
         progrsee(prog);
