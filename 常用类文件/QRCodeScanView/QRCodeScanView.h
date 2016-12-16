@@ -17,7 +17,8 @@
 @interface QRCodeScanView : UIView
 @property(nonatomic,weak)id <ScanDidEndDelegate>scanDelegate;
 //@property (nonatomic, assign) CGSize showSize;
-
+///设置相机的frame和扫描框的frame
 -(instancetype)initWithFrame:(CGRect)frame andScanViewRect:(CGRect)scanRect;
--(void)stopReading;
+-(void)stopScan;
+-(void)startScan;
 @end

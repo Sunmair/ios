@@ -25,6 +25,7 @@
 @property (nonatomic, assign) CGSize layerViewSize;
 /** 有效扫码范围 */
 @property (nonatomic, assign) CGRect scanRect;
+@property(nonatomic,retain)UIButton *dengButton;
 @end
 @implementation QRCodeScanView
 {
@@ -46,6 +47,9 @@
 //    [self addSubview:self.botomView];
     self.scanView = [[UIImageView alloc]initWithFrame:self.scanRect];
     self.scanView.image = [UIImage imageNamed:@"扫码框"];
+//    self.scanView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.25];
+   
+    
     self.scanView.frame = self.scanRect;
     [self addSubview:self.scanView];
     self.lineView  = [[UIImageView alloc] init];
@@ -53,12 +57,12 @@
     self.lineView.image = [UIImage imageNamed:@"line"];
     [self addSubview:self.lineView];
     //添加打开闪光灯的button
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake((self.frame.size.width-40)*0.5,CGRectGetMaxY(self.scanView.frame)+35, 40, 40);
-    [button setImage:[UIImage imageNamed:@"关灯"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"开灯"] forState:UIControlStateSelected];
-    [button addTarget:self action:@selector(handleKaiDeng:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:button];
+    self.dengButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.dengButton.frame = CGRectMake((KDeviceWidth-40)*0.5,CGRectGetMaxY(self.scanView.frame)+35, 40, 40);
+    [self.dengButton setImage:[UIImage imageNamed:@"关灯"] forState:UIControlStateNormal];
+    [self.dengButton setImage:[UIImage imageNamed:@"开灯"] forState:UIControlStateSelected];
+    [self.dengButton addTarget:self action:@selector(handleKaiDeng:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.dengButton];
 //    [self startReading];
 }
 -(void)startReading{
@@ -102,7 +106,6 @@
         
         //8.设置图层的frame
         [_videoPreviewLayer setFrame:self.frame];
-        
         //9.将图层添加到预览view的图层上
         [self.layer addSublayer:_videoPreviewLayer];
         [self setUI];
@@ -138,13 +141,19 @@
     }
 }
 -(void)haveReadText:(NSString *)value{
+    [self stopScan];
         if ([self.scanDelegate respondsToSelector:@selector(scanDidEnd:)]) {
         [self.scanDelegate scanDidEnd:value];
     }
 }
--(void)stopReading{
+-(void)stopScan{
     [_captureSession stopRunning];
+    self.dengButton.selected = NO;
     [self stopTimer];
+}
+-(void)startScan{
+    [_captureSession startRunning];
+    [self startTimer];
 }
 -(void)handleKaiDeng:(UIButton *)sender{
     sender.selected = !sender.selected;
@@ -166,9 +175,7 @@
 -(void)playAnimation{
     
     [UIView animateWithDuration:2.4 delay:0 options:UIViewAnimationOptionCurveLinear animations:^{
-        
          self.lineView .frame = CGRectMake(self.scanView.frame.origin.x, self.scanView.frame.size.height+self.scanView.frame.origin.y, self.scanView.frame.size.width, 2);
-        
     } completion:^(BOOL finished) {
         self.lineView .frame = CGRectMake(self.scanView.frame.origin.x, self.scanView.frame.origin.y, self.scanView.frame.size.width, 2);
     }];
@@ -179,18 +186,21 @@
     [_timer invalidate];
     _timer = nil;
 }
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-    [super drawRect:rect];
-    self.lineView .frame = CGRectMake(0, 0, self.scanView.frame.size.width, 2);
+-(void)startTimer{
     if (!_timer) {
         [self playAnimation];
         /* 自动播放 */
         self.timer = [NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(playAnimation) userInfo:nil repeats:YES];
     }
+
 }
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+    [super drawRect:rect];
+    [self startTimer];
+   }
 @end
 
 
