@@ -8,7 +8,7 @@
 
 #import "QRCodeScanView.h"
 #import <AVFoundation/AVFoundation.h>
-@interface QRCodeScanView ()<CAAnimationDelegate,AVCaptureMetadataOutputObjectsDelegate>
+@interface QRCodeScanView ()<AVCaptureMetadataOutputObjectsDelegate>
 @property(nonatomic,retain)UIImageView *scanView;
 @property (nonatomic, strong) UIImageView *lineView;
 @property (nonatomic, strong) NSTimer *timer;
