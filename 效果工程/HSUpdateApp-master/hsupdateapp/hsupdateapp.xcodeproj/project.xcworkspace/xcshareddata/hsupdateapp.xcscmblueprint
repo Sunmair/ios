@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "b217a75a-30bf-b41e-54ac-ce57b7db7bff",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "b217a75a-30bf-b41e-54ac-ce57b7db7bff" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "b217a75a-30bf-b41e-54ac-ce57b7db7bff" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "373C985A-79B9-4CCD-B30B-205825CEE348",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "b217a75a-30bf-b41e-54ac-ce57b7db7bff" : "ios.git\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "hsupdateapp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/效果工程\/HSUpdateApp-master\/hsupdateapp\/hsupdateapp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sunmair\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "b217a75a-30bf-b41e-54ac-ce57b7db7bff"
+    }
+  ]
+}
