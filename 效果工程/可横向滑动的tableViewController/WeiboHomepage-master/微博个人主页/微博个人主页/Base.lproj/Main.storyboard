@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T12-ez-9Ux">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Bac-Pu-bSS">
+            <objects>
+                <navigationController id="T12-ez-9Ux" customClass="NavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yPN-N7-GSA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="613-Tu-iGC" kind="relationship" relationship="rootViewController" id="hwk-aC-qrq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dul-8o-DhH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="363" y="-750"/>
+        </scene>
+        <!--哈哈-->
+        <scene sceneID="Yup-d4-9Io">
+            <objects>
+                <viewController id="613-Tu-iGC" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cb9-4u-x2p"/>
+                        <viewControllerLayoutGuide type="bottom" id="GOn-sI-Ufb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Li-gx-Qad">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEJ-FL-04I">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="个人主页"/>
+                                <connections>
+                                    <action selector="enterHomePage:" destination="613-Tu-iGC" eventType="touchUpInside" id="dDI-f2-yKf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dEJ-FL-04I" firstAttribute="centerX" secondItem="0Li-gx-Qad" secondAttribute="centerX" id="Ace-Ox-eoe"/>
+                            <constraint firstItem="dEJ-FL-04I" firstAttribute="centerY" secondItem="0Li-gx-Qad" secondAttribute="centerY" id="DiE-QP-qhm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="哈哈" id="mKx-1m-CWY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1vA-Tx-BO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="6"/>
+        </scene>
+    </scenes>
+</document>

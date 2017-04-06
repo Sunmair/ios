@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="q1d-RK-MKr" userLabel="headerView" customClass="CommualHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="123.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-nf-1T1">
+                    <rect key="frame" x="0.0" y="-160" width="320" height="360"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="360" id="QNZ-lR-hSj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4E-Gf-yEw">
+                    <rect key="frame" x="158" y="110" width="5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncw-gP-Z2I" customClass="HMSegmentedControl">
+                    <rect key="frame" x="0.0" y="200" width="320" height="40"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9Uv-nf-1T1" firstAttribute="leading" secondItem="q1d-RK-MKr" secondAttribute="leading" id="4fJ-WL-Oj1"/>
+                <constraint firstItem="n4E-Gf-yEw" firstAttribute="centerY" secondItem="q1d-RK-MKr" secondAttribute="centerY" id="IxL-oe-UtK"/>
+                <constraint firstAttribute="bottom" secondItem="Ncw-gP-Z2I" secondAttribute="bottom" id="Ofq-YP-d2K"/>
+                <constraint firstAttribute="trailing" secondItem="Ncw-gP-Z2I" secondAttribute="trailing" id="Tuv-59-0dx"/>
+                <constraint firstItem="n4E-Gf-yEw" firstAttribute="centerX" secondItem="q1d-RK-MKr" secondAttribute="centerX" id="cap-Hh-gRt"/>
+                <constraint firstAttribute="trailing" secondItem="9Uv-nf-1T1" secondAttribute="trailing" id="fyu-zO-CVS"/>
+                <constraint firstItem="Ncw-gP-Z2I" firstAttribute="top" secondItem="9Uv-nf-1T1" secondAttribute="bottom" id="sPT-Li-L9N"/>
+                <constraint firstItem="9Uv-nf-1T1" firstAttribute="top" secondItem="q1d-RK-MKr" secondAttribute="top" constant="-160" id="yBd-nP-M3E"/>
+                <constraint firstItem="Ncw-gP-Z2I" firstAttribute="leading" secondItem="q1d-RK-MKr" secondAttribute="leading" id="yHb-Um-Ur3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="n4E-Gf-yEw" id="Sse-Gg-Nb7"/>
+                <outlet property="segCtrl" destination="Ncw-gP-Z2I" id="O7L-nX-NEE"/>
+            </connections>
+            <point key="canvasLocation" x="750" y="645"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="123.jpg" width="618" height="582"/>
+    </resources>
+</document>
