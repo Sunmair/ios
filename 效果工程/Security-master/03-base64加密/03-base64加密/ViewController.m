@@ -22,16 +22,20 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
     // 加密字符串
-    NSString *string = @"I MISS YOU";
+    NSDictionary *dic = @{@"v":@"1.0",@"sign" :@"3b2434ba9be53e1b7ffdebbe9e4860bcdab7a5d9",@"timestamp":@"1495856140"};
+    NSData *data;
+    NSString *jsonString;
+    data = [self toJSONData:dic];
+    jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     
-    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
-    
-    NSLog(@"data:%@", data);
+    NSData *SECdata = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+
+    NSLog(@"data:%@", SECdata);
     
     // 进行base64 加密
 //    NSData *base64Data = [data base64EncodedDataWithOptions:0];
     
-    NSString *base64String = [data base64EncodedStringWithOptions:0];
+    NSString *base64String = [SECdata base64EncodedStringWithOptions:0];
     
     NSLog(@"base64Data:%@", base64String);
     
@@ -51,6 +55,33 @@
      */
     
 }
+
+
+
+-(NSData *)toJSONData:(id)theData{
+    
+    NSError *error = nil;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:theData
+                        
+                                                       options:NSJSONWritingPrettyPrinted
+                        
+                                                         error:&error];
+    
+    
+    
+    if ([jsonData length] > 0 && error == nil){
+        
+        return jsonData;
+        
+    }else{
+        
+        return nil;
+        
+    }
+    
+}
+
 
 // 解密图片
 - (void)test2 {

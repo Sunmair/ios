@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0728F9CA1EA0C40F006E4F79 /* KeyChainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0728F9C91EA0C40F006E4F79 /* KeyChainManager.m */; };
 		0FF15F181C75A3CD00F0D37A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF15F171C75A3CD00F0D37A /* main.m */; };
 		0FF15F1B1C75A3CD00F0D37A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF15F1A1C75A3CD00F0D37A /* AppDelegate.m */; };
 		0FF15F1E1C75A3CD00F0D37A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF15F1D1C75A3CD00F0D37A /* ViewController.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0728F9C81EA0C40F006E4F79 /* KeyChainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainManager.h; sourceTree = "<group>"; };
+		0728F9C91EA0C40F006E4F79 /* KeyChainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainManager.m; sourceTree = "<group>"; };
 		0FF15F131C75A3CD00F0D37A /* 10-钥匙串访问.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10-钥匙串访问.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FF15F171C75A3CD00F0D37A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FF15F191C75A3CD00F0D37A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +74,8 @@
 				0FF15F1A1C75A3CD00F0D37A /* AppDelegate.m */,
 				0FF15F1C1C75A3CD00F0D37A /* ViewController.h */,
 				0FF15F1D1C75A3CD00F0D37A /* ViewController.m */,
+				0728F9C81EA0C40F006E4F79 /* KeyChainManager.h */,
+				0728F9C91EA0C40F006E4F79 /* KeyChainManager.m */,
 				0FF15F1F1C75A3CD00F0D37A /* Main.storyboard */,
 				0FF15F221C75A3CD00F0D37A /* Assets.xcassets */,
 				0FF15F241C75A3CD00F0D37A /* LaunchScreen.storyboard */,
@@ -175,6 +180,7 @@
 				0FF15F1E1C75A3CD00F0D37A /* ViewController.m in Sources */,
 				0FF15F361C75A53D00F0D37A /* SSKeychainQuery.m in Sources */,
 				0FF15F351C75A53D00F0D37A /* SSKeychain.m in Sources */,
+				0728F9CA1EA0C40F006E4F79 /* KeyChainManager.m in Sources */,
 				0FF15F1B1C75A3CD00F0D37A /* AppDelegate.m in Sources */,
 				0FF15F181C75A3CD00F0D37A /* main.m in Sources */,
 			);
@@ -331,6 +337,7 @@
 				0FF15F2C1C75A3CD00F0D37A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
